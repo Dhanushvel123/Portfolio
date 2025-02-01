@@ -33,11 +33,24 @@ document.querySelectorAll('.fade-in').forEach(section => {
 observer.observe(section);
 });
 
-// Theme Toggle
 function toggleTheme() {
-document.body.classList.toggle("dark-mode");
-document.body.classList.toggle("light-mode");
+    const body = document.body;
+    const icon = document.getElementById("themeIcon");
+
+    // Toggle theme classes
+    body.classList.toggle("dark-mode");
+    body.classList.toggle("light-mode");
+
+    // Change SVG color based on theme
+    if (body.classList.contains("dark-mode")) {
+        icon.setAttribute("fill", "#ffffff");
+        icon.setAttribute("stroke", "#ffffff");
+    } else {
+        icon.setAttribute("fill", "#000000");
+        icon.setAttribute("stroke", "#000000");
+    }
 }
+
 
 // Form Validation
 document.getElementById('contactForm').addEventListener('submit', function(event) {
