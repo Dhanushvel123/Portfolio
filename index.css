@@ -21,11 +21,7 @@ transition: color 0.3s;
 color: #00bfff !important;
 }
 
-.navbar.scrolled {
-background-color: #343a40 !important;
-color: white;
-box-shadow: 0 2px 4px black;
-}
+
 
 /* Link-113 Hover Effect */
 .link-113 {
@@ -77,15 +73,22 @@ padding: 0 15px;
 transition: background-color 0.5s ease;
 }
 
-.name:hover {
+.hd:hover {
 color: #00bfff !important;
 }
 
 .navbar.scrolled {
-background-color: #343a40 !important;
-color: white;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #343a40 !important;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    .link-113{
+        color: white;
+    }
+    .hd{
+        color:white;
+    }
 }
+
 
 .nav-link {
 transition: color 0.3s;
@@ -295,4 +298,25 @@ margin-bottom: 20px;
 }
 } 
 
-    
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.he{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  position: absolute;
+  margin-top: 5px;
+  color:#6a0dad; 
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(90deg, #0d6efd, #6610f2,rgb(232, 38, 70), #f89102);
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+.he:hover {
+    color: #fff;
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}  
